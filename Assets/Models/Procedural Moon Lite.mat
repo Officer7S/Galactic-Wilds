@@ -46,9 +46,9 @@ Material:
     - _Filtering_Detail_Level: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Surface_Noise_Scale: 2.3167539
+    - _Surface_Noise_Scale: 1.6623707
     m_Colors:
-    - _Randomization_Offset: {r: -394.57605, g: 574.3462, b: 31.787142, a: 0}
+    - _Randomization_Offset: {r: -738.9247, g: -386.73187, b: 308.90018, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &5431641542686129939
