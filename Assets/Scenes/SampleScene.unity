@@ -1224,6 +1224,7 @@ MonoBehaviour:
   speed: 5
   jumpForce: 7
   cam: {fileID: 330585546}
+  isJumpBoosted: 0
 --- !u!54 &1542288492
 Rigidbody:
   m_ObjectHideFlags: 0
