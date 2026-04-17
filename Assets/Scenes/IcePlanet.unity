@@ -207,7 +207,7 @@ Transform:
   m_GameObject: {fileID: 424250026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 181.50711, y: 2.546218, z: 480.0941}
+  m_LocalPosition: {x: 181.50711, y: 2.546218, z: 480.09412}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1761291043}
-  offset: {x: 0, y: 2, z: -5}
+  offset: {x: 0, y: 0, z: 0}
   mouseSensitivity: 3
   minY: -20
   maxY: 60
@@ -284,15 +284,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6910977439792685100, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 192.25711
+      value: 36.17
       objectReference: {fileID: 0}
     - target: {fileID: 6910977439792685100, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.006218
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 6910977439792685100, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 469.0941
+      value: 64.33
       objectReference: {fileID: 0}
     - target: {fileID: 6910977439792685100, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
       propertyPath: m_LocalRotation.w
@@ -322,6 +322,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7016817621979342835, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1bf49d089e1a5b44fa09da3071fa89af, type: 2}
     - target: {fileID: 7985910073203591330, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
       propertyPath: m_Name
       value: Player
@@ -446,6 +450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1635400582}
   - component: {fileID: 1635400581}
+  - component: {fileID: 1635400583}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -533,6 +538,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1635400583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635400580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!4 &1761291043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6910977439792685100, guid: 58f76ce5b4248d14a884814df626bb30, type: 3}
@@ -542,7 +570,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1635400582}
   - {fileID: 424250029}
+  - {fileID: 1635400582}
   - {fileID: 1313782122}
   - {fileID: 564743773}

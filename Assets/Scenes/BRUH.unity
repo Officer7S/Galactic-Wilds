@@ -1801,9 +1801,10 @@ GameObject:
   - component: {fileID: 1407678263}
   - component: {fileID: 1407678262}
   - component: {fileID: 1407678261}
+  - component: {fileID: 1407678266}
   m_Layer: 0
   m_Name: Procedural Gas Giant (1)
-  m_TagString: Untagged
+  m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1981,6 +1982,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1407678266
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407678260}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.57901704
+  m_Center: {x: 0.054893274, y: 0, z: 0.024123967}
 --- !u!1 &1513712771
 GameObject:
   m_ObjectHideFlags: 0
@@ -2929,6 +2951,7 @@ GameObject:
   - component: {fileID: 8724214831056359422}
   - component: {fileID: 8724214831056359423}
   - component: {fileID: 8724214831056359424}
+  - component: {fileID: 8724214831056359425}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -2950,7 +2973,7 @@ GameObject:
   - component: {fileID: 8436501983584606834}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3041,6 +3064,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &8724214831056359425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8239744016506115396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280a5365a8aec76458b5f5cac731d39d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: IcePlanet
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
