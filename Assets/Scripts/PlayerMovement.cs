@@ -7,14 +7,15 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;  
     private bool isGrounded = true;   // Checks if player is on the ground  
     public Transform cam; // Assign your camera in the Inspector  
-    public bool isJumpBoosted = false; 
+    public bool isJumpBoosted = false;
+    static public bool dialogue = false;
 
     void Start()  
     {  
         rb = GetComponent<Rigidbody>(); // Get Rigidbody component  
     }  
   
-    void Update()  
+    void PlayerMove()  
     {  
         float x = Input.GetAxis("Horizontal");  
         float z = Input.GetAxis("Vertical");  
@@ -35,7 +36,17 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;  
         }  
     }  
-  
+    void Update()
+    {
+        PlayerMove();
+    }
+    private void FixedUpdate()
+    {
+        if(!dialogue)
+        {
+            PlayerMove();
+        }
+    }
     void OnCollisionEnter(Collision collision)  
     {  
         // If we touch the ground, allow jumping again  
