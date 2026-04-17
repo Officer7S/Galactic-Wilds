@@ -16,19 +16,35 @@ public class CameraFollow : MonoBehaviour
         pitch -= Input.GetAxis("Mouse Y") * mouseSensitivity;  
         pitch = Mathf.Clamp(pitch, minY, maxY);  
   
-        // Desired position  
+        // Calculate rotation  
         Quaternion rotation = Quaternion.Euler(pitch, yaw, 0);  
+  
+        // Desired position  
         Vector3 desiredPos = target.position + rotation * offset;  
   
-        // Wall check: if wall between player and camera, move camera closer  
-        RaycastHit hit;  
-        if (Physics.Linecast(target.position, desiredPos, out hit))  
+        // Wall check: only run if we have an offset (3rd person)  
+        if (offset != Vector3.zero)  
         {  
-            desiredPos = hit.point;  
+            RaycastHit hit;  
+            if (Physics.Linecast(target.position, desiredPos, out hit))  
+            {  
+                desiredPos = hit.point;  
+            }  
         }  
   
-        // Set camera position and look at player  
+        // Set camera position  
         transform.position = desiredPos;  
-        transform.LookAt(target.position);  
+  
+        // LOOK AT LOGIC:  
+        // If offset is zero (1st person), look forward using our calculated rotation.  
+        // If offset is not zero (3rd person), look at the player.  
+        if (offset == Vector3.zero)  
+        {  
+            transform.rotation = rotation;  
+        }  
+        else  
+        {  
+            transform.LookAt(target.position);  
+        }  
     }  
 }  
