@@ -23,9 +23,17 @@ public class PlayerMovement : MonoBehaviour
         Vector3 camForward = Vector3.Scale(cam.forward, new Vector3(1, 0, 1)).normalized;  
         Vector3 camRight = Vector3.Scale(cam.right, new Vector3(1, 0, 1)).normalized;  
   
+        // Normalize input so diagonal isn't faster  
+        Vector3 inputDirection = new Vector3(x, 0, z);  
+        if (inputDirection.magnitude > 1f)  
+        {  
+            inputDirection = inputDirection.normalized;  
+        }  
+  
         // Movement relative to camera  
-        Vector3 move = (camForward * z + camRight * x) * speed * Time.deltaTime;  
-        transform.Translate(move, Space.World);  
+        Vector3 move = (camForward * inputDirection.z + camRight * inputDirection.x) * speed * Time.deltaTime;  
+        rb.MovePosition(rb.position + move); 
+  
 
   
         // Jump if on ground and space pressed  

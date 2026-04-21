@@ -9459,28 +9459,28 @@ PrefabInstance:
       insertIndex: 6
       addedObject: {fileID: 1785025422}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 10
+      insertIndex: -1
       addedObject: {fileID: 1093290968}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 11
+      insertIndex: -1
       addedObject: {fileID: 1984300770}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 12
+      insertIndex: -1
       addedObject: {fileID: 2143991333}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 13
+      insertIndex: -1
       addedObject: {fileID: 780184716}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 14
+      insertIndex: -1
       addedObject: {fileID: 1981298807}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 15
+      insertIndex: -1
       addedObject: {fileID: 626366999}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 16
+      insertIndex: -1
       addedObject: {fileID: 326650988}
     - targetCorrespondingSourceObject: {fileID: 775043874958050451, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
-      insertIndex: 17
+      insertIndex: -1
       addedObject: {fileID: 1738013413}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a7471681cb98c8439194549b7162aec, type: 3}
@@ -9940,9 +9940,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 37769249311609177, guid: 990c69fa9406c5440a7a41ecdf014ad4, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 684394322669404836, guid: 990c69fa9406c5440a7a41ecdf014ad4, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3840669362707570790, guid: 990c69fa9406c5440a7a41ecdf014ad4, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8226693667091002861, guid: 990c69fa9406c5440a7a41ecdf014ad4, type: 3}
       propertyPath: m_LocalPosition.x
