@@ -38,17 +38,18 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _NoiseThreshold: 0.675
+    - _NoiseThreshold: 0.677
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RainbowStars: 0
     - _StarEdge: 0
-    - _StarScale: 5000
+    - _StarScale: 1000
+    - _idk: 66
     m_Colors:
-    - _BottomColor: {r: 0.3160377, g: 0.47048083, b: 1, a: 1}
+    - _BottomColor: {r: 0.2216981, g: 0.9451899, b: 1, a: 1}
     - _Direction: {r: 0, g: 0, b: 0, a: 0}
     - _StarColor: {r: 1, g: 1, b: 1, a: 0}
-    - _TopColor: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
+    - _TopColor: {r: 1, g: 0.9485313, b: 0.43867922, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &3668697924670159844
