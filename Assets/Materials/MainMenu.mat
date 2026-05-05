@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7742465841663132657
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 9
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Planet Glow
-  m_Shader: {fileID: -6465566751694194690, guid: 342695ad3349c8e449bd965e41a5f142, type: 3}
+  m_Name: MainMenu
+  m_Shader: {fileID: -6465566751694194690, guid: 118cefff13e53c34890b6b580598b52c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -18,7 +31,8 @@ Material:
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -37,12 +51,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Density_Falloff: 12.5
-    - _Glow_Falloff: 1
-    - _Glow_Intensity: 1
-    - _OMNIDIRECTIONAL_SPACE_LIGHTING: 0
+    - _NoiseThreshold: 0.693
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _RainbowStars: 0
+    - _StarEdge: 0
+    - _StarScale: 1000
+    - _idk: 233
     m_Colors:
-    - _Glow_Color: {r: 0.91297305, g: 0.3266911, b: 0.32272726, a: 1}
-    - _Object_Position: {r: -41579, g: 5481, b: 36919, a: 0}
+    - _BottomColor: {r: 0.2889368, g: 0.2260591, b: 0.3773585, a: 0}
+    - _Direction: {r: 0, g: 0, b: 0, a: 0}
+    - _StarColor: {r: 0.81960785, g: 0.84573287, b: 1, a: 0}
+    - _TopColor: {r: 0.4245283, g: 0.19023673, b: 0.31714475, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

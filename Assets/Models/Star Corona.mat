@@ -51,6 +51,6 @@ Material:
     - _Glow_Intensity: 1
     m_Colors:
     - _Corona_Color: {r: 1, g: 0.19433957, b: 0.2277054, a: 1}
-    - _Object_Position: {r: -4761, g: 0, b: 15146, a: 0}
+    - _Object_Position: {r: -3729.5, g: 25773, b: 78198, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
