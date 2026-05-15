@@ -2248,7 +2248,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3039772714550425361, guid: 9163695552d99e74e826a39908185c37, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 142.91985
+      value: 328.7
       objectReference: {fileID: 0}
     - target: {fileID: 3039772714550425361, guid: 9163695552d99e74e826a39908185c37, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2256,7 +2256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3039772714550425361, guid: 9163695552d99e74e826a39908185c37, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -155.3941
+      value: -339.5
       objectReference: {fileID: 0}
     - target: {fileID: 3039772714550425361, guid: 9163695552d99e74e826a39908185c37, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2293,8 +2293,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8274322657662991233, guid: 9163695552d99e74e826a39908185c37, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 132771849}
   m_SourcePrefab: {fileID: 100100000, guid: 9163695552d99e74e826a39908185c37, type: 3}
+--- !u!1 &132771848 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8274322657662991233, guid: 9163695552d99e74e826a39908185c37, type: 3}
+  m_PrefabInstance: {fileID: 132771847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &132771849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132771848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6476661a886e6c64da6e0245c02063a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: HXZ-34
+    sentences:
+    - 'Hello human. What is your purpose? What is purpose? Why do we exist?
+
+'
+    - ' Do we exist purely because of entropy, or did some greater being create living
+      beings? This is an important question.'
+    - "I guess that is not the goal of life, knowing everything. I guess it\u2019s
+      more about experiencing and learning from it."
+  playerInRange: 0
 --- !u!1 &133746832
 GameObject:
   m_ObjectHideFlags: 0
@@ -23662,7 +23693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7968161550875647281, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 129.98401
+      value: 165.9
       objectReference: {fileID: 0}
     - target: {fileID: 7968161550875647281, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -23670,7 +23701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7968161550875647281, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -151.13701
+      value: -123.2
       objectReference: {fileID: 0}
     - target: {fileID: 7968161550875647281, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23703,8 +23734,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4715418502779357426, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 766970166}
   m_SourcePrefab: {fileID: 100100000, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
+--- !u!1 &766970165 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4715418502779357426, guid: c5699e66fef1a61429629e976250f8ff, type: 3}
+  m_PrefabInstance: {fileID: 766970164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &766970166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766970165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6476661a886e6c64da6e0245c02063a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Dwayne
+    sentences:
+    - Hi there, human. My name Dwayne. I like book. I love my family. I have 4 daughter
+      and 2 male offspring. I am learning your language. Am I doing the good?
+    - Human! I has a gift for you. I found it in the ice when i fell down and cracked
+      it a bit. Does you like? Ice was cold!
+  playerInRange: 0
 --- !u!1 &768092663
 GameObject:
   m_ObjectHideFlags: 0
@@ -32277,6 +32336,7 @@ MonoBehaviour:
     sentences:
     - Hey!
     - How ya doin son ;)
+    - Are ya winning, son?
   playerInRange: 0
 --- !u!1 &1177959670
 GameObject:
@@ -38011,7 +38071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212523709711369578, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 139.68134
+      value: 179.9
       objectReference: {fileID: 0}
     - target: {fileID: 2212523709711369578, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
       propertyPath: m_LocalPosition.y
@@ -38019,7 +38079,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2212523709711369578, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -159.99188
+      value: -54.3
       objectReference: {fileID: 0}
     - target: {fileID: 2212523709711369578, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38052,8 +38112,39 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2043469783372002686, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1431832291}
   m_SourcePrefab: {fileID: 100100000, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
+--- !u!1 &1431832290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2043469783372002686, guid: a1c2dd0eb4531d2419f0fc21b838cbda, type: 3}
+  m_PrefabInstance: {fileID: 1431832289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1431832291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431832290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6476661a886e6c64da6e0245c02063a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Bohfen Hrathenagh
+    sentences:
+    - Hello there, human. What brings you here?
+    - So, you have traversed the stars, and are now here due to your current lack
+      of fuel? I see. My name is Bohfen Hrathenagh.
+    - I shall assist you by showing you the path to the local market.
+    - Is there any particular reason why you are exploring the cosmos? Ah, your father
+      was an explorer himself. And you are wishing to reach him. I see.
+    - Unfortunately, I do not know your father, but perhaps someone in town will.
+  playerInRange: 0
 --- !u!1 &1436293012
 GameObject:
   m_ObjectHideFlags: 0
@@ -47452,10 +47543,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Clexian
+    name: Zypher Qwin
     sentences:
-    - Welcome to...
-    - THE ICE PLANET!!!
+    - "Yo! Whadup, human?! What\u2019cha doin? Oh, you outta fuel? My dad sells gas.You
+      got moneh? "
+    - No? You got no moneh? You broke as frick, boi! Why you so broke, bru? No way
+      you survivin out here with no monies. You gonna be picked out by dem fishies.
+    - "Ugh, fine, my hoverbike got cooked in a ditch over there. You get it out,
+      ill get my dad to get you some gas.\r"
   playerInRange: 0
 --- !u!1 &1863446371
 GameObject:
